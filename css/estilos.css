@@ -1,0 +1,215 @@
+/*
+Colores a usar: 
+
+#212121 Letra
+#F0F3ED Fondo
+#E5EAE7 Cuadros de texto
+#E55951 Corazón (principal)
+#F76D67 Rojo 1 (menos valor)
+#FF8682 Rojo 2 (menos menos valor)
+
+*/
+
+/*ANIMACIONES*/
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.ani {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+/* REGLAS PARA LA PORTADA */
+.img1 {
+    width: 200px;
+    height: 200px;
+}
+
+.divmain{
+    width: 98vw;
+    height: 90vh;
+    margin: -2rem;
+}
+
+.divmainF {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 600px) and (min-width: 160px) {
+    .titulo {
+        font-size: 8rem;
+    }
+}
+
+@media (max-width: 1400px) and (min-width: 600px) {
+    .titulo {
+        font-size: 15rem;
+    }
+}
+
+@media (max-width: 4000px) and (min-width: 1400px) {
+    .titulo {
+        font-size: 20rem;
+    }
+}
+
+.titulo {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+/*DEMAS REGLAS CSS*/
+
+* {
+    /**/
+    
+    color: #212121;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+body {
+    background-color: #F0F3ED;
+    background-image: url("/img/wall-4-light.png");
+}
+
+div {
+    /*border: solid; /**/
+    border-color:cadetblue ;
+    padding: 1rem;
+}
+
+.subtitulo {
+    font-size: 4rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.subtitulo2 {
+    font-size: 3rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.resalte_titulo{
+    font-size: 4rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #E55951;
+}
+/*TODO REVISAR EL CSS PARA ALINEACION AQUI*/
+
+.frase {
+    text-align: center;
+    font-style: italic;
+}
+
+.rectangulo {
+    background-color: #F76D67;
+    border-color: #F76D67;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    color: #F0F3ED;
+    font-weight: 600;
+    text-align: center;
+}
+
+.rectangulo:hover {
+    background-color: #FF8682;
+    border-color: #FF8682;
+    color: #212121;
+}
+
+.fondo-color{
+    background-color: #E5EAE7;
+    /*Solución quizá temporal*/
+    height: 100%;
+}
+
+.resalte {
+    background-color: #E5EAE7;
+    color: #E55951;
+    font-weight: 900;
+}
+
+.resalte2 {
+    color: #E55951;
+    font-weight: 900;
+}
+
+.cita {
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 7px #212121;
+}
+
+.carta {
+    height: 100%;
+    border-radius: 1rem;
+    background-color: #E5EAE7;
+}
+
+.carIzq {
+    margin-left: -1.5rem;
+}
+
+.carDer {
+    margin-right: -1.5rem;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color: #212121;
+}
+
+.foot {
+    font-weight: 600;
+}
+
+.imgPin {
+    max-height: 400px;
+    max-width: 400px;
+}
+
+/*PARA LA ANIMACIÓN PRINCIPAL*/
+.camino {
+    height: 100vh;
+    align-content: space-around;
+}
+
+.auxiliarCamino {
+    height: 100vh;
+}
+
+.camino-img {
+    height: 80vh;
+    background-image: url("/img/Winter road-cuate.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+}
+
+.elemento {
+    border: 1px solid rgba(229, 234, 231, .25);
+    border-radius: 1em;
+    background-color: rgba(229, 234, 231, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    width: 30%;
+    display: inline-block;
+}

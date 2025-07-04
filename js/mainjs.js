@@ -52,9 +52,10 @@ function camino(){
         scrollTrigger: {
             trigger: ca0,
             start: "top 10%",
+            end: "+=100%",
             scrub: 1,
             pin: ca0,
-            pinSpacing: true,
+            pinSpacing: false,
             toggleActions: "restart none none none"
         }
     });
@@ -82,25 +83,26 @@ function camino(){
     tal2.to(ca7, { y: "-980%", x: "0%", scale: 0.75, borderColor: "" })
     */ 
     tal2.fromTo(ca1, { xPercent: -200, scale: 2 }, { xPercent: 100, scale: 1, borderColor: "#E55951", border: "2" })
-    tal2.to(ca1, {yPercent: 0, y: "60vh",scale:0.5, borderColor: "", xPercent: 0, x: "10vw"})
+    tal2.to(ca1, {yPercent: 0, y: "45vh",scale:0.4, borderColor: "", xPercent: 0, x: "10vw"})
 
     tal2.fromTo(ca2, { xPercent: 430, scale: 2 }, { xPercent: 0, yPercent: 0, scale: 1, borderColor: "#E55951", border: "2" })
-    tal2.to(ca2, { yPercent: 0, y: "50vh", scale: 0.5, borderColor: "", xPercent: 0, x: "20vw" })
+    tal2.to(ca2, { yPercent: 0, y: "40vh", scale: 0.4, borderColor: "", xPercent: 0, x: "20vw" })
 
     tal2.fromTo(ca3, { xPercent: -400, scale: 2 }, { xPercent: -100, scale: 1, borderColor: "#E55951", border: "2" })
-    tal2.to(ca3, { yPercent: 0, y: "45vh", scale: 0.5, borderColor: "", xPercent: 0, x: "-30vw" })
+    tal2.to(ca3, { yPercent: 0, y: "35vh", scale: 0.3, borderColor: "", xPercent: 0, x: "-25vw"})
 
     tal2.fromTo(ca4, { xPercent: 430, scale: 2 }, { xPercent: 100, yPercent: -80, scale: 1, borderColor: "#E55951", border: "2" })
-    tal2.to(ca4, { yPercent: 0, y: "10vh", scale: 0.5, borderColor: "", xPercent: 0, x: "50vw" })
+    tal2.to(ca4, { yPercent: 0, y: "-5vh", scale: 0.3, borderColor: "", xPercent: 0, x: "50vw" })
 
     tal2.fromTo(ca5, { xPercent: -400, scale: 2 }, { xPercent: 0, yPercent: -150,scale: 1, borderColor: "#E55951", border: "2" })
-    tal2.to(ca5, { yPercent: 0, y: "5vh", scale: 0.5, borderColor: "", xPercent: 0, x: "0vw" })
+    tal2.to(ca5, { yPercent: 0, y: "-15vh", scale: 0.4, borderColor: "", xPercent: 0, x: "10vw" })
 
     tal2.fromTo(ca6, { xPercent: 430, scale: 2 }, { xPercent: -100, yPercent: -100, scale: 1, borderColor: "#E55951", border: "2" })
-    tal2.to(ca6, { yPercent: 0, y: "-7vh", scale: 0.5, borderColor: "", xPercent: 0, x: "-20vw" })
+    tal2.to(ca6, { yPercent: 0, y: "-27vh", scale: 0.4, borderColor: "", xPercent: 0, x: "1vw" })
 
     tal2.fromTo(ca7, { xPercent: -400, scale: 2 }, { xPercent: 0, yPercent: -400, scale: 1, borderColor: "#E55951", border: "2" })
-    tal2.to(ca7, { yPercent: 0, y: "-30vh", scale: 0.5, borderColor: "", xPercent: 0, x: "-20vw" })
+    tal2.to(ca7, { yPercent: 0, y: "-50vh", scale: 0.5, borderColor: "", xPercent: 0, x: "-20vw" })
+    tal2.to(ca0 ,{opacity: "0"})
     return tal2;
 }
 

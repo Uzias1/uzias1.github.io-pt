@@ -84,7 +84,7 @@ Colores a usar:
 
 body {
     background-color: #F0F3ED;
-    background-image: url("/img/wall-4-light.png");
+    background-image: url("../img/fondazo.png");
 }
 
 div {
@@ -198,7 +198,7 @@ div {
 
 .camino-img {
     height: 80vh;
-    background-image: url("/img/Winter road-cuate.svg");
+    background-image: url("../img/super_camino.svg");
     background-repeat: no-repeat;
     background-position: center;
     padding: 0;
